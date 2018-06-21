@@ -1,0 +1,288 @@
+.path {
+    stroke-dasharray: 1300;
+    display: none;
+}
+.path-visible {
+    display: block !important;
+}
+
+.circle-path {
+    stroke-dasharray: 739.4483642578125;
+    display: none;
+}
+
+.yellow-path {
+    stroke-dasharray: 2530;
+    display: none;
+}
+
+@-webkit-keyframes yellowPathAnimation {
+    from {
+        stroke-dashoffset: -2530;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes yellowPathAnimation {
+    from {
+        stroke-dashoffset: -2530;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes dash {
+    from {
+        stroke-dashoffset: -1300;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: -1300;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes dottedYellowPath {
+    from {
+        stroke-dashoffset: -2530.203125;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dottedYellowPath {
+    from {
+        stroke-dashoffset: -2530.203125;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+@-webkit-keyframes circlePath {
+    from {
+        stroke-dashoffset: 739.4483642578125;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+@keyframes circlePath {
+    from {
+        stroke-dashoffset: 739.4483642578125;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/*
+* Pulse animation
+*/
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1);-moz-transform: scale(1); }
+    50% { -webkit-transform: scale(1.5); -moz-transform: scale(1.5);}
+    100% { -webkit-transform: scale(1); -moz-transform: scale(1);}
+}
+@keyframes pulse {
+    0% { -webkit-transform: scale(1); transform: scale(1); }
+    50% { -webkit-transform: scale(1.5); transform: scale(1.5); }
+    100% { -webkit-transform: scale(1); transform: scale(1); }
+}
+
+@-webkit-keyframes pulse2 {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.08); }
+    100% { -webkit-transform: scale(1); }
+}
+@keyframes pulse2 {
+    0% { -webkit-transform: scale(1); transform: scale(1); }
+    50% { -webkit-transform: scale(1.08); transform: scale(1.08); }
+    100% { -webkit-transform: scale(1); transform: scale(1); }
+}
+.pulse {
+    display: block !important;
+    -webkit-animation-duration: 5000ms;
+    animation-duration: 5000ms;
+    -webkit-transform-origin:50% 50%;
+    transform-origin:50% 50%;
+    -webkit-animation: pulse 3s linear;
+    animation: pulse 3s linear;
+}
+
+.pulse-2 {
+    display: block !important;
+    -webkit-animation-duration: 5000ms;
+    animation-duration: 5000ms;
+    -webkit-transform-origin:50% 50%;
+    transform-origin:50% 50%;
+    -webkit-animation: pulse2 1s linear;
+    animation: pulse2 1s linear;
+}
+.check {
+    display: none;
+}
+.check-visible {
+    display: block !important;
+}
+.layout {
+    display: none;
+}
+.arrow {
+    opacity: 0;
+    -webkit-transition: opacity 2s;
+    transition: opacity 2s;
+}
+.arrow-show {
+    opacity: 1 !important;
+}
+#startup,
+#layout_text,
+#development,
+#publish {
+    opacity: 0;
+    -webkit-transition: opacity 2.0s ;
+    transition: opacity 2.0s ;
+}
+.show-text {
+    opacity: 1 !important;
+}
+.blue-path {
+    display: none;
+}
+.animation-1 {
+    display: block;
+    -webkit-animation: dash 1s linear ;
+    animation: dash 1s linear ;
+}
+
+.animation-2 {
+    display: block;
+    -webkit-animation: yellowPathAnimation 2.5s linear forwards;
+    animation: yellowPathAnimation 2.5s linear forwards;
+}
+
+.animation-3 {
+    display: block;
+    -webkit-animation: dottedYellowPath 15s linear infinite;
+    animation: dottedYellowPath 15s linear infinite;
+}
+
+.animation-circle-path {
+    display: block;
+    -webkit-animation: circlePath 1s linear ;
+    animation: circlePath 1s linear ;
+}
+
+.blue-animation {
+    display: block;
+    -webkit-animation: blueAnimation 2.5s linear forwards;
+    animation: blueAnimation 2.5s linear forwards;
+    stroke-dasharray: 2259.719482421875;
+}
+
+@-webkit-keyframes blueAnimation {
+    from {
+        stroke-dashoffset: 2259.719482421875;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes blueAnimation {
+    from {
+        stroke-dashoffset: 2259.719482421875;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes dottedBluePath {
+    from {
+        stroke-dashoffset: -2259.719482421875;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dottedBluePath {
+    from {
+        stroke-dashoffset: -2259.719482421875;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.dotted-blue-animation {
+    display: block;
+    -webkit-animation: dottedBluePath 15s linear infinite;
+    animation: dottedBluePath 15s linear infinite;
+}
+
+
+.animate-gear{
+    -webkit-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -moz-transform-origin: center;
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#check_1,
+#check_2,
+#check_3 {
+    display: none;
+}
+
+@-webkit-keyframes rocketAnimation {
+    0%   {-webkit-transform: translateY(0);transform: translateY(0)}
+    25%  {-webkit-transform: translateY(-25px);transform: translateY(-25px)}
+    75%  {-webkit-transform: translateY(25px);transform: translateY(25px)}
+    100% {-webkit-transform: translateY(0);transform: translateY(0)}
+}
+
+@keyframes rocketAnimation {
+    0%   {-webkit-transform: translateY(0);transform: translateY(0)}
+    25%  {-webkit-transform: translateY(-25px);transform: translateY(-25px)}
+    75%  {-webkit-transform: translateY(25px);transform: translateY(25px)}
+    100% {-webkit-transform: translateY(0);transform: translateY(0)}
+}
+
+.rocket {
+    -webkit-animation: rocketAnimation 5s linear infinite;
+    animation: rocketAnimation 5s linear infinite;
+}
